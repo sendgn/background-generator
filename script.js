@@ -1,7 +1,12 @@
+var _ = require('lodash');
+
 var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
+
+const array = [0, 1, 2, 3, 4, 5];
+console.log('answer: ', _.without(array, 2));
 
 function setGradient() {
 	body.style.background = 
